@@ -1,6 +1,9 @@
 <script>
-	import { PUBLIC_TEST } from '$env/static/public';
+	import Sections from '$lib/components/Sections.svelte';
+	import Toppage from '$lib/components/Toppage.svelte';
 </script>
 
-<h1>Welcome to {PUBLIC_TEST}</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<div class="mx-auto flex w-full flex-col gap-y-2 lg:w-[48rem]">
+	<Toppage />
+	<Sections title="Hello, I am...">A self taught web developer</Sections>
+</div>
